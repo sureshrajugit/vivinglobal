@@ -155,6 +155,10 @@ h4, h5, h6, .h4, .h5, .h6 {
     box-shadow: 0 4px 10px rgba(76, 139, 82, 0.25);
 }
 
+.nav-link:hover, .nav-link:focus {
+    color: #085516;
+}
+
 .nav-link{
     color: #198754;
 }
@@ -163,7 +167,9 @@ h4, h5, h6, .h4, .h5, .h6 {
     background: var(--bs-light);
     border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
-
+.navbar-brand .logo {
+    width: 150px;
+}
 .navbar .navbar-nav .nav-link {
     color: #84bd6c;
     padding: 10px 12px;
@@ -226,7 +232,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(212, 167, 98, 0.7);
+    background: rgba(177, 251, 155, 0.7);
     border-radius: 8px;
     transition: 0.5s;
     opacity: 0;
@@ -297,6 +303,9 @@ h4, h5, h6, .h4, .h5, .h6 {
 /*** Menu Start ***/
 .menu .nav-item a.active {
     background: var(--bs-primary) !important;
+}
+.menu .nav-item a.active span.text-dark {
+    color: #fff !important;
 }
 
 .menu .menu-item .border-bottom {
